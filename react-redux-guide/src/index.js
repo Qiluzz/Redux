@@ -1,9 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import {createStore} from 'redux';
+
+const initialState = {
+  count: 0
+}
+
+function reducer(state = initialState) {
+  return state
+}
+
+const store = createStore(reducer)
+
+console.log(store.getState())
 ReactDOM.render(
   <React.StrictMode>
     <App />
