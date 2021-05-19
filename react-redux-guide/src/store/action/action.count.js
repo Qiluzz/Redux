@@ -1,4 +1,4 @@
 import { DECREMENT, INCREMENT } from "../const/counter.const"
 
-export const decrement =()=>({ type: INCREMENT})
-export const increment =()=>({ type: DECREMENT})
+export const increment =payload=>({ type: INCREMENT, payload})
+export const decrement =payload=>({ type: DECREMENT, payload})

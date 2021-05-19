@@ -7,10 +7,10 @@ const initialState = {
 export default function reducer(state = initialState,action) {
     switch (action.type) {
     case INCREMENT:
-        return { count: state.count + 1 }
+        return { count: state.count + action.payload }
         break;
     case DECREMENT:
-        return { count: state.count - 1 }
+        return { count: state.count - action.payload }
         break;
     default:
         return state
