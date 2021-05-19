@@ -1,2 +1,4 @@
-export const decrement =()=>({ type: "decrement"})
-export const increment =()=>({ type: "increment"})
+import { DECREMENT, INCREMENT } from "../const/counter.const"
+
+export const decrement =()=>({ type: INCREMENT})
+export const increment =()=>({ type: DECREMENT})
