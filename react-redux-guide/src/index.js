@@ -4,28 +4,29 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import  {Provider} from 'react-redux'
 import Count from './Component/Count'
+import {store} from './store'
 
-import {createStore} from 'redux';
+// import {createStore} from 'redux';
 
-const initialState = {
-  count: 0
-}
+// const initialState = {
+//   count: 0
+// }
 
-function reducer(state = initialState,action) {
-  switch (action.type) {
-    case "increment":
-      return { count: state.count + 1 }
-      break;
-    case "decrement":
-      return { count: state.count - 1 }
-      break;
-    default:
-      return state
-      break;
-  }
-}
+// function reducer(state = initialState,action) {
+//   switch (action.type) {
+//     case "increment":
+//       return { count: state.count + 1 }
+//       break;
+//     case "decrement":
+//       return { count: state.count - 1 }
+//       break;
+//     default:
+//       return state
+//       break;
+//   }
+// }
 
-const store = createStore(reducer)
+// const store = createStore(reducer)
 
 ReactDOM.render(
   // 通过Provider组件，将 store 放在全局的组件可以够得到的地方
