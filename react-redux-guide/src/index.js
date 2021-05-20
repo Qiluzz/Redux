@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import  {Provider} from 'react-redux'
-import Count from './Component/Count'
+
 import {store} from './store'
 
 // import {createStore} from 'redux';
@@ -31,7 +31,7 @@ import {store} from './store'
 ReactDOM.render(
   // 通过Provider组件，将 store 放在全局的组件可以够得到的地方
   <Provider store = {store}>
-    <Count/>
+    <App/>
   </Provider>,
   document.getElementById('root')
 );

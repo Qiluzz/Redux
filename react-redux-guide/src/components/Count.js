@@ -16,7 +16,7 @@ function Count({ increment, decrement, count}) {
     
 }
 const mapStateToProps = state =>({
-    count: state.count
+    count: state.counter.count
 })
 
 // bindActionCreators({
