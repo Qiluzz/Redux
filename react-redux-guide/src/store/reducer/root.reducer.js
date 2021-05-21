@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import counterReducer from './count.reducer'
+import counterReducer from './counter.reducer'
 import modalReducer from './modal.reducer'
 
 

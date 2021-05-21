@@ -1,6 +1,8 @@
 import { delay, put, takeEvery} from 'redux-saga/effects';
 import { INCREMENT_ASYNC } from '../const/counter.const';
-import { increment_async, increment } from '../action/action.count';
+// import { increment_async, increment } from '../action/action.count';
+import {increment_async, increment} from '../action/counter.actions';
+
 
 
 
@@ -17,7 +19,7 @@ function * increment_async_fn(action) {
 
 export default function * counterSaga() {
     // 接收action
-    yield takeEvery(INCREMENT_ASYNC, increment_async_fn)
+    yield takeEvery(increment_async, increment_async_fn)
     
     
 }
