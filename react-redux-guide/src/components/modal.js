@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import * as modalActions from '../store/action/action.modal';
 
 
-function Modal({ showModal, hideModal, isShow }) {
+function Modal({ showModal, hideModal, isShow, showModal_async }) {
     const styles ={
         width:200,
         height:200,
@@ -19,7 +19,7 @@ function Modal({ showModal, hideModal, isShow }) {
 
     return (
         <div>
-            <button onClick={showModal}>显示</button>
+            <button onClick={showModal_async}>显示</button>
             <button onClick={hideModal}>隐藏</button>
             <div style={styles}>{isShow}</div>
         </div>
