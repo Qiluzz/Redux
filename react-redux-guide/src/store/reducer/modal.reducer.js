@@ -5,7 +5,7 @@ const initialState = {
 }
 
 export default function reducer(state = initialState, action) {
-    console.log('222', state, action)
+
     switch (action.type) {
         case SHOWMODAL:
             return {
