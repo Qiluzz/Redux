@@ -5,11 +5,12 @@ import reducer from './reducer/root.reducer';
 // import thunk from './middleware/thunk'
 import thunk from 'redux-thunk'
 import createSagaMiddleware from 'redux-saga'
-import counterSaga from './saga/counter.saga'
+import rootSaga from './saga/root.saga'
+
 
 //创建sagaMiddleware
 const sagaMiddleware = createSagaMiddleware()
 
 export const store = createStore(reducer, applyMiddleware(sagaMiddleware, thunk))
 
-sagaMiddleware.run(counterSaga)
+sagaMiddleware.run(rootSaga)
